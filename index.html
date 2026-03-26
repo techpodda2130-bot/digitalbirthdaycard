@@ -239,8 +239,8 @@ footer{text-align:center;padding:max(3vh,2rem) 1rem max(4vh,env(safe-area-inset-
     <span class="ls-colon">:</span>
     <div class="ls-seg"><span class="ls-num" id="ls">00</span><div class="ls-lbl">Seconds</div></div>
   </div>
-  <p class="ls-date">🌙 Tonight • 09:40 PM</p>
-  <p class="ls-note">Testing the countdown reveal for Sonali ✨</p>
+  <p class="ls-date">🌙 March 27, 2026 • 12:00 AM</p>
+  <p class="ls-note">Something magical is being prepared for you, Sonali ✨</p>
 </div>
 
 <!-- Lightbox -->
@@ -559,7 +559,7 @@ function toggleMusic(){
 
 // ── Midnight Lock Screen ────────────────────
 const UNLOCK_AT = new Date();
-UNLOCK_AT.setHours(21, 40, 0, 0); // 🧪 Setting to 9:40 PM for testing tonight!
+UNLOCK_AT.setHours(24, 0, 0, 0); // tonight midnight
 
 function updateLockCountdown(){
   const diff = UNLOCK_AT - new Date();
