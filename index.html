@@ -558,7 +558,8 @@ function toggleMusic(){
 }
 
 // ── Midnight Lock Screen ────────────────────
-const UNLOCK_AT = new Date(2000,0,1); // Set to past for immediate preview
+const UNLOCK_AT = new Date();
+UNLOCK_AT.setHours(24, 0, 0, 0); // tonight midnight
 
 function updateLockCountdown(){
   const diff = UNLOCK_AT - new Date();
